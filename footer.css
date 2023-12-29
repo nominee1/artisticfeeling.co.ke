@@ -1,0 +1,225 @@
+:root{
+    --my-primary: linear-gradient(rgb(214, 211, 211),white) ;
+    --color-primary: var(--my-primary);
+    
+    --my-top:rgb(189, 186, 186); 
+    --color-top:var( --my-top);
+    --primary-color:#16202c;
+    --primary-color-light:#F6F5FF;
+    --footer-color:#2250d5;
+    
+    --hover-color:#3c4c59;
+    --toggle-color:#DDD;
+    --text-color:#0c0753;
+    --text-p-color:#6d69a8;
+    --color-white:white;
+    --top-color:rgb(170, 170, 170);
+    --logo-color:#1a1288;
+
+
+
+    --color-light: rgb(161, 160, 165);
+    --color-background: rgb(19, 14, 31);
+    --color-success: green;
+    --color-danger: yellow;
+    --color-info-dark: rgb(54, 52, 52);
+
+
+
+    
+    /* transition */
+    --trans-02: all0.2s ease ;
+    --hover-color:#;
+    --trans-03: all0.3s ease ;
+    --trans-04: all0.4s ease ;
+    --trans-05: all0.5s ease ;
+    --trans-06: 300ms ease;
+
+    --card-border-radius-1: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-1: 0.8rem;
+    --border-radius-1: 01.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.8rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+     
+} 
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 14px;
+
+}
+
+     
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-primary);
+    user-select: none;
+    overflow-x: hidden;
+}
+
+body.dark{
+    --color-primary: #16202c;
+    --primary-color:rgb(255, 255, 255);
+    --primary-color-light:#ffffff;
+    --color-top:#23313c;
+    
+    --hover-color:#23313c;
+    --toggle-color:#DDD;
+    --text-color:#f0f0f0;
+    --text-p-color:#ffffff;
+    --color-white:#23313c;
+
+    --color-light: rgb(255, 255, 255);
+    --color-background: rgb(255, 255, 255);
+    --color-success: green;
+    --color-info-dark: rgb(255, 255, 255);
+    --logo-color:#1a1288;
+
+
+    --box-shadow: none;
+}
+
+a{
+    color: var(--text-color);
+}
+
+img{
+    /* display: block; */
+    width: 100%;
+}
+h1{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+h3{
+    font-size: 0.88rem;
+}
+h4{
+    font-size: 0.8rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+
+.footer-container{
+
+    position: relative;
+    background: var(--color-top);
+    /* margin-left: 1rem; */
+    
+
+    margin-top: 1.5rem;
+ }
+ .footer{
+    margin-top: 2rem;
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .footer .social{
+    position: absolute;
+    font-size: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+ }
+ .footer .footer-image{
+    border-radius:  20% ;
+   background: var(--logo-color);
+   padding: 0.2rem;
+   border-color:var(--primary-color);
+
+ }
+ .footer .footer-image img{
+    width: 50px;
+    height: 50px;
+}
+
+.footer .title .list{
+    display: flex;
+    margin-top: 0.5rem;
+   /* justify-content: center; */
+}
+.footer .title{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    flex-direction: column;
+    
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.footer-container .copyright{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+@media screen and (max-width:1200px){
+    .footer{
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .footer{
+        flex-direction: column;
+        margin-top: 1rem;
+        
+
+    }
+    .footer-container{
+        width: 100%;
+        height: 100;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+ .footer .footer-image{
+    padding: 0;
+    background: none;
+ }
+.footer .title h2{
+    font-size: 1rem;
+}
+.footer .title{
+    margin-bottom: 1rem;
+}
+.footer .social{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+
+
+
+}
