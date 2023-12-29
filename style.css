@@ -592,7 +592,7 @@ body.dark .switch::before{
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    background: linear-gradient(to right, #16202c, #4dcde1);
+    background: linear-gradient(to right, #16202c, #274045);
     
     
     /* width: 86%; */
